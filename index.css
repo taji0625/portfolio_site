@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+}
+
+.top-wrapper {
+  background-image: url(image/california-1751455.jpg);
+  height: 600px;
+  background-position: 0 -560px;
+  background-attachment: fixed;
+}
+
+.top-message {
+  position: fixed;
+  background-color: rgba(203, 247, 245, 0.8);
+  top: 100px;
+  right: 100px;
+  text-align: center;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.top-message > p {
+  font-size: 18px;
+}
+
+.job-change-message-1 {
+  color: red;
+}
+
+header {
+  background-color: rgba(162, 223, 220, 0.8);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  margin:  10px 0 10px 50px;
+}
+
+.header-left > a {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(5, 36, 33, 0.788);
+  text-decoration: none;
+  vertical-align: middle;
+  letter-spacing: 5px;
+}
+
+.header-right > .menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 50px 0 0;
+  height: 100%;
+}
+
+.header-right > .menu > li {
+  padding: 15px 20px 10px 20px ;
+  list-style: none;
+  font-size: 18px;
+  transition-duration: 0.5s;
+}
+
+.header-right > .menu > li:hover {
+  background-color:  rgba(10, 161, 154, 0.8);
+}
+
+.header-right > .menu > li > a {
+  text-decoration: none;
+  color: rgba(5, 36, 33, 0.788);
+}
+
+@media screen and (min-width: 768px) {
+  #navArea {
+    display: none;
+  }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .top-wrapper {
+    height: 250px;
+    background-position: -400px -780px;
+  }
+
+  .top-message {
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .job-change-message-1, .job-change-message-2 {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .top-message > p {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .header-left {
+    margin:  15px 0 10px 15px;
+  }
+
+  .header-left > a {
+    font-size: 21px;
+    letter-spacing: 0;
+  }
+
+  .header-right > .menu {
+    display: none;
+  }
+
+
+
+  nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    width: 300px;
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all .5s;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  .open nav {
+    left: 0;
+    opacity: 1;
+  }
+
+  nav .inner {
+    padding: 25px;
+  }
+
+  nav .inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav .inner ul li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid rgba(5, 36, 33, 0.788);
+  }
+
+  nav .inner ul li a {
+    display: block;
+    color: rgba(5, 36, 33, 0.788);
+    font-size: 14px;
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+
+  nav .inner ul li a:hover {
+    background: #e4e4e4;
+  }
+  
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+  
+  /*============
+  .toggle_btn
+  =============*/
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 265px;
+    right: 17px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all .5s;
+  }
+
+  .toggle_btn span:nth-child(1) {
+    top: 4px;
+  }
+
+  .toggle_btn span:nth-child(2) {
+    top: 14px;
+  }
+  .toggle_btn span:nth-child(3) {
+    bottom: 4px;
+  }
+
+  .open .toggle_btn span {
+    background-color: #fff;
+  }
+
+  .open .toggle_btn span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+  }
+
+  .open .toggle_btn span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .toggle_btn span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+  }
+  /*============
+  #mask
+  =============*/
+  #mask {
+    display: none;
+    transition: all .5s;
+  }
+
+  .open #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+}
