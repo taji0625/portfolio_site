@@ -2,6 +2,15 @@ body {
   margin: 0;
 }
 
+p {
+  margin: 7px 0;
+  font-size: 16px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
 /* top */
 
 .top-wrapper {
@@ -22,7 +31,6 @@ body {
   box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
   padding: 10px;
   border-radius: 10px;
-  opacity: 1;
   z-index: 2;
 }
 
@@ -37,10 +45,18 @@ body {
 /* header */
 
 header {
-  background-color: rgba(162, 223, 220, 0.8);
+  background-color: rgba(162, 223, 220);
   display: flex;
   justify-content: space-between;
   z-index: 10;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
 }
 
 .header-left {
@@ -50,7 +66,7 @@ header {
 .header-left > a {
   font-size: 25px;
   font-weight: bold;
-  color: rgba(5, 36, 33, 0.788);
+  color: rgba(5, 36, 33);
   text-decoration: none;
   vertical-align: middle;
   letter-spacing: 5px;
@@ -71,12 +87,12 @@ header {
 }
 
 .header-right > .menu > li:hover {
-  background-color:  rgba(10, 161, 154, 0.8);
+  background-color:  rgba(10, 161, 154);
 }
 
 .header-right > .menu > li > a {
   text-decoration: none;
-  color: rgba(5, 36, 33, 0.788);
+  color: rgba(5, 36, 33);
 }
 
 /* about_me */
@@ -89,19 +105,95 @@ main {
 main h1 {
   text-align: center;
   margin: 0;
-  font-size: 30px;
+  font-size: 35px;
   letter-spacing: 5px;
+  padding-bottom: 60px;
 }
 
 .about_me {
-  background-color:  rgba(220, 238, 237, 0.8);
-  padding-top: 30px;
+  background-color:  rgba(220, 238, 237);
+  padding-top: 90px;
 }
 
-.about_me img {
-  width: 300px;
-  height: 300px;
+.about_me-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
+
+.wrapper-left {
+  margin-left: 20px;
+}
+
+.sns-link {
+  width: 400px;
+  text-align: center;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap
+}
+
+.sns-link > li {
+  margin: 5px 40px;
+}
+
+.sns-link > li i {
+  padding-right: 7px;
+}
+
+.fa-twitter {
+  color: rgb(31,162,240);
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-search {
+  color: rgb(85,197,0);
+}
+
+.about_me-wrapper > .wrapper-left > img {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #1e3b2d31;
+}
+
+.about_me-wrapper ul li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.about_me-wrapper ul li a {
+  text-decoration: none;
+  color: rgb(19, 48, 45);
+}
+
+.about_me-wrapper > .wrapper-right {
+  width: 800px;
+}
+
+.about_me-wrapper > .wrapper-right p {
+  padding-left: 40px;
+}
+
+.about_me-wrapper > .wrapper-right .fas {
+  padding-right: 10px;
+}
+
+.career span {
+  color: red;
+  font-weight: bold
+}
+
+.aim-title {
+  padding-top: 20px;
+}
+
+.aim {
+  padding-left: 67px !important;
+}
+
 
 
 
@@ -189,12 +281,12 @@ main h1 {
   nav .inner ul li {
     position: relative;
     margin: 0;
-    border-bottom: 1px solid rgba(5, 36, 33, 0.788);
+    border-bottom: 1px solid rgba(5, 36, 33);
   }
 
   nav .inner ul li a {
     display: block;
-    color: rgba(5, 36, 33, 0.788);
+    color: rgba(5, 36, 33, 1);
     font-size: 14px;
     padding: 1em;
     text-decoration: none;
