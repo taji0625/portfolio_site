@@ -376,5 +376,16 @@ main h1 {
     z-index: 2;
     cursor: pointer;
   }
+
+  /* about_me */
+
+  .about_me-wrapper {
+    display: block;
+  }
+
+  .wrapper-left > img {
+    width: 200px !important; 
+    height: 200px !important;
+  }
   
 }
