@@ -200,32 +200,51 @@ main h1 {
   justify-content: space-around;
 }
 
-.rails-wrapper > .wrapper-left img {
+.rails-wrapper > .wrapper-left {
+  width: 510px;
+}
+
+.rails-wrapper > .wrapper-left > img {
   width: 500px;
   height: auto;
-  margin-left: 20px;
+  margin: 20px 0 20px 20px;
   border: 1px solid #1e3b2d31;
 }
 
 .app-title {
   background-color: rgb(162,222,219);
-  width: 260px;
+  width: 300px;
   padding: 5px 0;
   text-align: center;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 30px auto;
   border-left: 15px solid  rgb(48, 151, 146);
   font-size: 25px;
   border-radius: 3px;
 }
 
 .source-code a {
-  color: rgba(5, 36, 33);
+  color: rgb(4, 104, 37);
   text-decoration: none;
 }
 
 .source-code a:hover {
   text-decoration: underline;
-  color: rgb(4, 104, 37);
+ 
+}
+
+.point > p {
+  padding-left: 30px !important;
+}
+
+.gyakuten-clone {
+  padding-top: 70px;
+}
+
+/* javascript */
+
+.javascript {
+  background-color:  rgba(220, 238, 237);
+  padding: 30px 0;
 }
 
 
@@ -418,13 +437,14 @@ main h1 {
 
   /* about_me */
 
-  .about_me-wrapper {
+  .wrapper {
     display: block;
   }
 
   .wrapper-left {
     text-align: center;
     margin-left: 0;
+    width: auto !important;
   }
 
   .wrapper-left > img {
@@ -459,6 +479,20 @@ main h1 {
 
   p {
     font-size: 15px;
+  }
+
+  /* rails */
+
+  .rails img {
+    width: 300px !important;
+    height: auto !important;
+    margin: 10px 0 !important;
+  }
+
+  .source-code a {
+    color: rgb(2, 99, 18);
+    border-bottom: 1px solid  rgb(2, 99, 18);
+    padding-bottom: 2px;
   }
   
 }
