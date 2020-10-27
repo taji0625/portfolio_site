@@ -126,7 +126,7 @@ main h1 {
 }
 
 .sns-link {
-  width: 400px;
+  width: 500px;
   text-align: center;
   padding-left: 0;
 }
@@ -148,8 +148,8 @@ main h1 {
 }
 
 .wrapper > .wrapper-left > img {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: auto;
   border: 1px solid #1e3b2d31;
 }
 
@@ -480,8 +480,8 @@ footer > p {
   }
 
   .wrapper-left > img {
-    width: 250px !important; 
-    height: 250px !important;
+    width: 300px !important;
+    height: auto !important;
   }
 
   .sns-link {
