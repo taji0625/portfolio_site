@@ -479,7 +479,7 @@ footer > p {
     width: auto !important;
   }
 
-  .wrapper-left > img {
+  .about_me > .wrapper > .wrapper-left > img {
     width: 300px !important;
     height: auto !important;
   }
