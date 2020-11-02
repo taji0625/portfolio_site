@@ -123,16 +123,21 @@ main h1 {
 
 .wrapper-left {
   margin-left: 20px;
+  text-align: center;
+}
+
+.sns {
+  text-align: center;
 }
 
 .sns-link {
-  width: 500px;
-  text-align: center;
+  display: inline-block;
   padding-left: 0;
 }
 
 .sns-link > li {
   margin: 5px 40px;
+  text-align: left;
 }
 
 .sns-link > li i {
