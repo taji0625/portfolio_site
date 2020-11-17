@@ -286,6 +286,22 @@ footer > p {
 }
 
 
+/* fadein */
+
+.js-fadein {
+  opacity: 0; 
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+.js-fadein.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+
+
 
 
 
@@ -309,7 +325,7 @@ footer > p {
   }
 
   .top-message {
-    top: 10px;
+    top: 1px;
     right: 20px;
     left: 20px;
     padding: 5px;
