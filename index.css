@@ -124,6 +124,7 @@ main h1 {
 .wrapper-left {
   margin-left: 20px;
   text-align: center;
+  padding-right: 30px;
 }
 
 .sns {
@@ -305,7 +306,7 @@ footer > p {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   #navArea {
     display: none;
   }
@@ -318,7 +319,7 @@ footer > p {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 949px) {
   .top-wrapper {
     height: 250px;
     background-position: -400px -780px;
@@ -326,13 +327,14 @@ footer > p {
 
   .top-message {
     top: 1px;
-    right: 20px;
-    left: 20px;
+    right: 10px;
+    left: 10px;
     padding: 5px;
     font-size: 14px;
     margin: 0 auto;
     padding: 5px;
     margin-top: 10px;
+    width: 350px;
   }
 
   .job-change-message-1, .job-change-message-2 {
@@ -515,7 +517,7 @@ footer > p {
   }
 
   .wrapper-right {
-    width: 340px !important;
+    width: auto !important;
   }
 
   h1 {
