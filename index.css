@@ -124,7 +124,7 @@ main h1 {
 .wrapper-left {
   margin-left: 20px;
   text-align: center;
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .sns {
@@ -502,8 +502,12 @@ footer > p {
 
   .wrapper-left {
     text-align: center;
-    margin-left: 0;
+    margin: 0 20px;
     width: auto !important;
+  }
+
+  .wrapper > .wrapper-right p {	
+    padding-right: 20px;	
   }
 
   .about_me > .wrapper > .wrapper-left > img {
