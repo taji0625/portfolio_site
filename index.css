@@ -565,7 +565,7 @@ footer > p {
 
   /* javascript */
 
-  .javascript img, video, .html_css img, .other img  {
+  .javascript img, video, .html_css img, .other img, .vuejs img  {
     width: 300px !important;
     height: auto !important;
     margin: 10px 0 !important;
